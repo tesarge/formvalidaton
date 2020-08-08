@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Permanent+Marker&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="form.css">
+    <script defer src="form.js"></script>
+    <title>Form Validation</title>
+  </head>
+
+  <body>
+    <div id="formcontainer">
+        <h1 id="title">Form Validation</h1>
+      <p id="description">Please fill out the form and hit the submit button</p>
+     <div id="error"></div>
+      <form id="form" name="form" autocomplete="on">
+      <div class="labels">
+        <label  for="firstname">First Name </label>
+       </div>
+      <div class="inputs">
+        <input type="text" name="firstname" id="firstname" placeholder="Enter your first name">
+        </div>
+      <div class="labels">
+        <label for="lastname">Last Name </label>
+        </div>
+      <div class="inputs">
+        <input type="text" name="lastname" id="lastname" placeholder="Enter your last name">
+        </div>
+      <div class="labels">
+        <label for="address">Address</label>
+        </div>
+      <div class="inputs">
+        <input type="text" name="address" id="address" placeholder="Enter your address">
+        </div>
+      <div class="labels">
+        <label for="city">City</label>
+         </div>
+      <div class="inputs">
+         <input type="text" name="city" id="city" placeholder="Enter your city">
+         </div>
+      <div class="labels">
+         <label for="zip">Zip Code</label>
+         </div>
+      <div class="inputs">
+         <input type="text" name="zip" id="zip" placeholder="5 digit zip">
+         </div>
+      <div class="labels">
+         <label for="state">State</label>
+         </div>
+      <div class="inputs">
+            <select id="state" name="state">
+            <option value="0" disabled selected hidden>Select State</option>
+            <option value="1">Maryland</option>
+            <option value="2">Virginia</option>
+            <option value="3">Pennsylvania</option>
+            <option value="4">West Virginia</option>
+            </select>
+        </div>
+      <div class="labels">
+         <label for="areacode">Area Code</label>
+         </div>
+      <div class="inputs">
+            <input type="text" name="areacode" id="areacode" placeholder="3 digit area code">
+            </div>
+      <div class="labels">
+         <label for="phone">Phone number</label>
+         </div>
+      <div class="inputs">
+         <input type="text" name="phone" id="phone" placeholder="7 digit phone number">
+         </div>
+      <div class="labels">
+        <label for="email">Email </label>
+       </div>
+      <div class="inputs">
+       <input type="email" id="email" name="email" placeholder="Enter your email">
+      </div>
+      <div class="labels">
+        <label for="confirm">Confirm Email </label>
+       </div>
+      <div class="inputs">
+       <input type="email" id="confirm" name="confirm" placeholder="Confirm your email">
+      </div>
+
+       <div class="labels">
+        <label for="meal">Meal Preference</label>
+       </div>
+       <div class="inputs">
+        <select id="meal" name="meal">
+        <option value="0" disabled selected hidden>Select Meal Preference</option>
+        <option value="1">Vegan</option>
+        <option value="2">Vegetarian</option>
+        <option value="3">Non-Vegetarian</option>
+        </select>
+      </div>
+       <div class="labels">
+          <label >What is your prefered method of contact? (select two)</label>
+         </div>
+       <div class="inputs">
+        <input class="contact" type="checkbox" name="contact" value="email">E-mail<br>
+        <input class="contact" type="checkbox" name="contact" value="phone">Phone<br>
+        <input class="contact" type="checkbox" name="contact" value="mail">Mail<br>
+       </div>
+       <div class="labels">
+         <label>Additional Comments</label>
+       </div>
+       <div class="inputs">
+         <textarea name="comment" cols="30" rows="4"></textarea>
+       </div>
+       <div >
+         <button class="submitbtn" >Submit</button>
+         <button id="reset" class="reset">Reset</button>
+       </div>
+      </form>
+    </div>
+
+  </body>
+</html>

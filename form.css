@@ -1,0 +1,103 @@
+html {
+  height: 100%;
+}
+
+body {
+  background-repeat: no-repeat;
+  background: -webkit-gradient(linear, left top, right bottom, from(midnightblue), to(mediumorchid));
+  background: linear-gradient(to bottom right, midnightblue, mediumorchid);
+  background-position: fixed;
+  width: 100%;
+}
+
+#title {
+  font-family: "Permanent Marker", cursive;
+  color: midnightblue;
+  font-size: 45px;
+  text-align: center;
+}
+
+#description {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  color: #333;
+  font-size: 25px;
+  padding-top: 5px;
+}
+
+#formcontainer {
+  display: block;
+  background-color: whitesmoke;
+  width: 75%;
+  max-width: 900px;
+  text-align: center;
+  margin: auto;
+  border-radius: 15px;
+  padding: 5px;
+}
+
+#form {
+  color: #333;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+}
+
+.labels {
+  display: inline-block;
+  text-align: right;
+  vertical-align: top;
+  width: 40%;
+  padding-right: 5px;
+  padding-top: 15px;
+}
+
+.inputs {
+  display: inline-block;
+  text-align: left;
+  width: 40%;
+  padding-left: 5px;
+  padding-top: 15px;
+}
+
+input {
+  border: 2px solid #f0f0f0;
+  border-radius: 4px;
+}
+
+.submitbtn {
+  background: -webkit-gradient(linear, left top, left bottom, from(lightseagreen), to(steelblue));
+  background: linear-gradient(to bottom, lightseagreen, steelblue);
+  color: floralwhite;
+  margin: 25px;
+  font-size: 15px;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 15px;
+}
+
+.submitbtn:active {
+  background: lightseagreen;
+}
+
+.reset {
+  background: -webkit-gradient(linear, left top, left bottom, from(#cc0066), to(#990033));
+  background: linear-gradient(to bottom, #cc0066, #990033);
+  color: floralwhite;
+  margin: 25px;
+  font-size: 15px;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 15px;
+}
+
+.reset:active {
+  background: #990033;
+}
+
+#error {
+  color: firebrick;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  padding: 5px;
+}
+/*# sourceMappingURL=form.css.map */
